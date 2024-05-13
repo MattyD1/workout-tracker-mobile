@@ -22,4 +22,6 @@ jobs:
         with:
           eslint: true
           eslint_extensions: js,jsx,ts,tsx
+          eslint_dir: ./src
           prettier: true
+          prettier_dir: ./src
