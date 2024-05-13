@@ -1,3 +1,15 @@
+# 🔗 Links:
+# Source file: https://github.com/obytes/react-native-template-obytes/blob/master/.github/workflows/lint-ts.yml
+
+# ✍️ Description:
+# This action is used to run eslint checks
+# Runs on pull requests and pushes to  the main/master branches
+# Based on the event type:
+#   - If it's a pull request, it will run eslint, then add the check to the PR as well as annotate the code with the errors and warnings.
+#   - If it's a push to main/master, it will run the type checking and fail if there are any errors.
+
+# 🚨 GITHUB SECRETS REQUIRED: NONE
+
 name: Lint TS (eslint, prettier)
 
 on:
@@ -13,7 +25,7 @@ jobs:
       contents: read
       pull-requests: write
 
-     steps:
+    steps:
       - name: 📦 Checkout project repo
         uses: actions/checkout@v4
 
@@ -25,6 +37,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review # Change reporter.
           eslint_flags: '. --ext .js,.jsx,.ts,.tsx'
-
-
-   
