@@ -20,6 +20,7 @@ jobs:
   type-check:
     name: Type Check (tsc)
     runs-on: ubuntu-latest
+
     steps:
       - name: 📦 Checkout project repo
         uses: actions/checkout@v3
