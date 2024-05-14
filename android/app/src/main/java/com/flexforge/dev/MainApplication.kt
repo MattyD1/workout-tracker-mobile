@@ -1,4 +1,4 @@
-package com.flexforge.workoutTracker
+package com.flexforge.dev
 
 import android.app.Application
 import android.content.res.Configuration

@@ -1,4 +1,4 @@
-package com.flexforge.workoutTracker
+package com.flexforge.dev
 
 import android.os.Build
 import android.os.Bundle
