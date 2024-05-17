@@ -2,6 +2,7 @@ import React from 'react'
 import { StatusBar } from 'expo-status-bar'
 import { Text, View } from 'react-native'
 import { cn } from 'src/core/utils'
+import Todos from 'src/features/demo/components/todos'
 
 import { Env } from '../core/env'
 
@@ -17,6 +18,8 @@ export default function App() {
         Open up App.tsx to start working on your app! This is environment $
         {Env.APP_ENV}
       </Text>
+
+      <Todos />
 
       <StatusBar style="auto" />
     </View>
