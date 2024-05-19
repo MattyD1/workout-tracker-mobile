@@ -1,23 +1,24 @@
 import 'fast-text-encoding'
 import 'react-native-get-random-values'
 
-// import { EvoluProvider } from '@evolu/react-native'
+import React from 'react'
+import { EvoluProvider } from '@evolu/react-native'
 import { Slot } from 'expo-router'
 
-// import evolu from '../db/setup'
+import evolu from '../db/setup'
 
 import '../../global.css'
 
-export default Slot
+export default RootLayoutNav
 
-// function RootLayoutNav() {
-//   return (
-//     // <Providers>
-//     <Slot />
-//     // </Providers>
-//   )
-// }
+function RootLayoutNav() {
+  return (
+    <Providers>
+      <Slot />
+    </Providers>
+  )
+}
 
-// function Providers({ children }: { children: React.ReactNode }) {
-//   return <EvoluProvider value={evolu}>{children}</EvoluProvider>
-// }
+function Providers({ children }: { children: React.ReactNode }) {
+  return <EvoluProvider value={evolu}>{children}</EvoluProvider>
+}

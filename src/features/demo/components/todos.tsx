@@ -12,7 +12,7 @@ const Todos = () => {
       <Text>Todos</Text>
       <View>
         {rows.map((row) => (
-          <Text>{row.title}</Text>
+          <Text key={row.id}>{row.title}</Text>
         ))}
       </View>
     </>
