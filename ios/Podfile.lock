@@ -8,7 +8,7 @@ PODS:
   - EXJSONUtils (0.13.1)
   - EXManifests (0.14.2):
     - ExpoModulesCore
-  - Expo (51.0.6):
+  - Expo (51.0.8):
     - ExpoModulesCore
   - ExpoAsset (10.0.6):
     - ExpoModulesCore
@@ -16,11 +16,11 @@ PODS:
     - ExpoModulesCore
   - ExpoFont (12.0.5):
     - ExpoModulesCore
-  - ExpoHead (3.5.12):
+  - ExpoHead (3.5.14):
     - ExpoModulesCore
-  - ExpoKeepAwake (13.0.1):
+  - ExpoKeepAwake (13.0.2):
     - ExpoModulesCore
-  - ExpoModulesCore (1.12.10):
+  - ExpoModulesCore (1.12.11):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1577,13 +1577,13 @@ SPEC CHECKSUMS:
   EXConstants: 9a008dbf262550884e6280dea95b81b51f65ea6f
   EXJSONUtils: 30c17fd9cc364d722c0946a550dfbf1be92ef6a4
   EXManifests: 866d0c365eb46835d48be2c7a0e00418312992b4
-  Expo: c6b1655cc45b8529e4a6f18417814502c5613b1a
+  Expo: c99f14ca53381d5399b88684c88e20ff7928d3c7
   ExpoAsset: 9b7433ecc5f1b608ccbb823492e062bde944abd2
   ExpoFileSystem: 80bfe850b1f9922c16905822ecbf97acd711dc51
   ExpoFont: 690b76008be824e47907f200cb0764870108dfd1
-  ExpoHead: 1403ab1219f4f95f0a288f27312a9ef2863eebc7
-  ExpoKeepAwake: f3a7b0ff4b4911957264dad8cb584ef688326a22
-  ExpoModulesCore: 4c5576eec261d09549d78b751ccd62d94d4506ac
+  ExpoHead: 28ccee5977648d15f6a62b9a680a4bd169a1515b
+  ExpoKeepAwake: 3b8815d9dd1d419ee474df004021c69fdd316d08
+  ExpoModulesCore: 4eb2165cde325c8c121d495bb8beb0da9b30c92e
   ExpoSQLite: 0091da247fdd8095f2cc213d98f812dba0ec7ca3
   ExpoSystemUI: b5ecc4b6781b6369fb8b3a0903bea36fae3dd090
   EXSplashScreen: d439ca817211886dc80a00f3761e3b6d861d7205
