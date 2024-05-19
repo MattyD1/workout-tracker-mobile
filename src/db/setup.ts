@@ -15,7 +15,7 @@ const Database = database({
   todo: TodoTable,
   todoCategory: TodoCategoryTable,
 })
-type Database = typeof Database.Type
+export type Database = typeof Database.Type
 
 const indexes = createIndexes((create) => [
   create('indexTodoCreatedAt').on('todo').column('createdAt'),
