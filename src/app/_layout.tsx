@@ -5,7 +5,7 @@ import React from 'react'
 import { EvoluProvider } from '@evolu/react-native'
 import { Slot } from 'expo-router'
 
-import evolu from '../db/setup'
+import evolu from '@/db/setup'
 
 import '../../global.css'
 

@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
+import { Text, TextInput, View } from 'react-native'
 import * as S from '@effect/schema/Schema'
 import { NonEmptyString1000, useEvolu, useQuery } from '@evolu/react-native'
 import { Either, Function } from 'effect'
-import { Text, TextInput, View } from 'react-native'
-import { type Database } from 'src/db/setup'
+
+import { type Database } from '@/db/setup'
 
 import { getTodosWithCategories } from '../repositories/get-todos-with-categories'
 

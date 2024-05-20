@@ -1,6 +1,6 @@
 import { cast, jsonArrayFrom, type NotNull } from '@evolu/react-native'
 
-import evolu from '../../../db/setup'
+import evolu from '@/db/setup'
 
 export const getTodosWithCategories = evolu.createQuery(
   (db) =>
