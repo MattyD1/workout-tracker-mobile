@@ -4,11 +4,14 @@ import 'react-native-get-random-values'
 import React from 'react'
 import { useReactNavigationDevTools } from '@dev-plugins/react-navigation'
 import { EvoluProvider } from '@evolu/react-native'
+import { ThemeProvider } from '@react-navigation/native'
 import { SplashScreen, Stack, useNavigationContainerRef } from 'expo-router'
 
 import evolu from '@/db/setup'
 
 import '../../global.css'
+
+import { useThemeConfig } from '@/core/use-theme-config'
 
 export { ErrorBoundary } from 'expo-router'
 
@@ -35,5 +38,10 @@ function RootLayoutNav() {
 }
 
 function Providers({ children }: { children: React.ReactNode }) {
-  return <EvoluProvider value={evolu}>{children}</EvoluProvider>
+  const theme = useThemeConfig()
+  return (
+    <ThemeProvider value={theme}>
+      <EvoluProvider value={evolu}>{children}</EvoluProvider>
+    </ThemeProvider>
+  )
 }
