@@ -1,10 +1,10 @@
 import React from 'react'
-import { StatusBar } from 'expo-status-bar'
 import { Text, View } from 'react-native'
-import { cn } from 'src/core/utils'
-import Todos from 'src/features/demo/components/todos'
+import { StatusBar } from 'expo-status-bar'
 
-import { Env } from '../core/env'
+import { Env } from '@/core/env'
+import { cn } from '@/core/utils'
+import Todos from '@/features/demo/components/todos'
 
 export default function App() {
   return (

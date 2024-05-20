@@ -14,6 +14,13 @@ const PACKAGE = 'com.flexforge'
 const NAME = 'workout-tracker-mobile'
 const SCHEME = 'workout-tracker-mobile'
 
+/**
+ * The function withEnvSuffix will add a suffix to the variable name based on the APP_ENV
+ * Add a suffix to variable env based on APP_ENV
+ * @param {string} name
+ * @returns  {string}
+ */
+
 const withEnvSuffix = (name) =>
   APP_ENV === 'prod' ? name : `${name}.${APP_ENV}`
 
@@ -34,6 +41,9 @@ const buildTime = z.object({
   VAR_BUILD: z.string(),
 })
 
+/**
+ * @type {Record<keyof z.infer<typeof client> , unknown>}
+ */
 const _clientEnv = {
   APP_ENV,
   NAME: NAME,
@@ -47,6 +57,9 @@ const _clientEnv = {
   VAR_BOOL: process.env.VAR_BOOL === 'true',
 }
 
+/**
+ * @type {Record<keyof z.infer<typeof buildTime> , unknown>}
+ */
 const _buildEnv = {
   VAR_BUILD: process.env.VAR_BUILD,
 }

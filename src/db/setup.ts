@@ -5,11 +5,12 @@ import {
   database,
   NonEmptyString1000,
 } from '@evolu/react-native'
-import { TodoTable } from 'src/features/demo/models/todo'
+
+import { TodoTable } from '@/features/demo/models/todo'
 import {
   NonEmptyString50,
   TodoCategoryTable,
-} from 'src/features/demo/models/todo-category'
+} from '@/features/demo/models/todo-category'
 
 const Database = database({
   todo: TodoTable,
