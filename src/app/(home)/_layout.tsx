@@ -15,7 +15,7 @@ export default function TabLayout() {
   return (
     <Tabs>
       <Tabs.Screen
-        name="dashboard"
+        name="index"
         options={{
           title: 'Dashboard',
         }}
